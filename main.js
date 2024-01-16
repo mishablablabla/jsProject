@@ -1,24 +1,19 @@
-const  numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели ?");
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?', '');
 
-const personalMovieDB = {
+const persomalMovieDB = {
         count : numberOfFilms,
-        movies : {
+        movies : {},
+        actors : {},
+        geners : [],
+        privat : false
+};
 
-       },
-       actors : {
+const a = prompt('Один из послледних просмотреных фильмов ?'),
+      b = prompt('На сколько оцените его ?'),
+      c = prompt('Один из послледних просмотреных фильмов ?'),
+      d = prompt('На сколько оцените его ?');
 
-       },
-       geners : [],
-       privat : false
-    };
+persomalMovieDB.movies[a] = b;
+persomalMovieDB.movies[c] = d;
 
- const  a = prompt("Один из последних посмотреных фильмов ?"),
-        b = prompt("На сколько оцените его ?"),
-        c = prompt("Один из последних посмотреных фильмов ?"),
-        d = prompt("На сколько оцените его ?");
- 
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB)
+console.log(persomalMovieDB)
