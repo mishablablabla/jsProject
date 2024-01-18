@@ -22,8 +22,8 @@ const persomalMovieDB = {
 
  function rememberMyFilms () {
         for (let i = 0; i < 2; i++) {
-            const   a = prompt('Один из послледних просмотреных фильмов ?'),
-                    b = prompt('На сколько оцените его ?');
+            const   a = prompt('Один из послледних просмотреных фильмов ?').trim(),
+                    b = prompt('На сколько оцените его ?').trim();
 
                  if (a.length < 1 || a.length > 50 || a === null || b === null ) {
                        i--;
